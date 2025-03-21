@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="MVVMProject" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="gTy-I5-J5A" id="xTV-Tl-tC3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="apple.intelligence" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s8I-py-fPU">
+                    <rect key="frame" x="96.666666666666686" y="325.66666666666669" width="200" height="200.33333333333331"/>
+                    <color key="tintColor" name="SlateBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Dwn-BN-R4i"/>
+                        <constraint firstAttribute="height" constant="200" id="vZo-pP-hof"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-I5-J5A">
+                    <rect key="frame" x="171.66666666666666" y="401" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wqM-lF-0AL"/>
+                        <constraint firstAttribute="width" constant="50" id="wqy-3q-HpB"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Linen"/>
+            <constraints>
+                <constraint firstItem="gTy-I5-J5A" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3xS-sz-gqp"/>
+                <constraint firstItem="s8I-py-fPU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7iU-yV-ibH"/>
+                <constraint firstItem="s8I-py-fPU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kOZ-U5-k9G"/>
+                <constraint firstItem="gTy-I5-J5A" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mLk-YH-V9u"/>
+            </constraints>
+            <point key="canvasLocation" x="66" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple.intelligence" catalog="system" width="128" height="118"/>
+        <namedColor name="Linen">
+            <color red="0.96862745098039216" green="0.92549019607843142" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SlateBlue">
+            <color red="0.44705882352941179" green="0.35294117647058826" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
