@@ -5,7 +5,7 @@ class SplashViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    var viewModel: SplashViewModel
+    private let viewModel: SplashViewModel
     
     init(viewModel: SplashViewModel) {
         self.viewModel = viewModel
@@ -37,6 +37,7 @@ class SplashViewController: UIViewController {
     func doneLoading() {
         activityIndicator.stopAnimating()
         print("Done loading")
+        present(LoginBuilder().build(), animated: true)
     }
     
     func loadingError(reason: String) {

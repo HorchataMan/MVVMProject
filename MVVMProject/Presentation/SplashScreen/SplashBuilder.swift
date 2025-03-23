@@ -1,7 +1,7 @@
-import Foundation
+import UIKit
 
 final class SplashBuilder {
-    func build() -> SplashViewController {
+    func build() -> UIViewController {
         let viewModel = SplashViewModel()
         return SplashViewController(viewModel: viewModel)
     }
