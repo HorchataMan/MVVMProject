@@ -1,4 +1,4 @@
-struct HeroDTO: Codable {
+struct HeroDTO: Codable, Equatable {
     let identifier: String
     let name: String
     let description: String

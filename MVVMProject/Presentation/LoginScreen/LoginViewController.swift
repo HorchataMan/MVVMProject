@@ -10,7 +10,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var errorLabel: UILabel!
     
-    private var viewModel: LoginViewModel
+    private let viewModel: LoginViewModel
     
     init(viewModel: LoginViewModel) {
         self.viewModel = viewModel
@@ -53,6 +53,7 @@ class LoginViewController: UIViewController {
         loginButton.isHidden = false
         errorLabel.isHidden = true
         print("yay signed in correctly")
+        present(HeroTableBuilder().build(), animated: true)
         
     }
     

@@ -13,7 +13,7 @@ final class SplashViewModel {
     func load() {
         stateMachine.update(.loading)
         
-        DispatchQueue.global().asyncAfter(deadline: .now() + 3) { [weak self] in
+        DispatchQueue.global().asyncAfter(deadline: .now() + 2) { [weak self] in
             self?.stateMachine.update(.done)
         }
     }
